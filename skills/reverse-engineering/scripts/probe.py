@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 Likhon Sheikh <https://github.com/sheikhminds>
+# SPDX-License-Identifier: MIT
 """Show how the bytes at an offset read as every plausible type (standard library only).
 
 Helps decide what a field is: integers in both byte orders, floats, timestamps,
@@ -132,5 +134,6 @@ def main():
 
 if __name__ == "__main__":
     import signal
-    signal.signal(signal.SIGPIPE, signal.SIG_DFL)  # quiet exit when piped to head/less
+    if hasattr(signal, "SIGPIPE"):  # not available on Windows
+        signal.signal(signal.SIGPIPE, signal.SIG_DFL)  # quiet exit when piped to head/less
     main()

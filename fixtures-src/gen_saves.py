@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Likhon Sheikh <https://github.com/sheikhminds>
+# SPDX-License-Identifier: MIT
 import struct, zlib, os
 def save(players, ts, version=3):
     body = b"GSAV" + struct.pack("<HHI", version, len(players), ts)

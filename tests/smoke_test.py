@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 Likhon Sheikh <https://github.com/sheikhminds>
+# SPDX-License-Identifier: MIT
 """End-to-end check of the helper scripts. Standard library only. Run: python3 tests/smoke_test.py"""
 import json, os, shutil, subprocess, sys, tempfile
 

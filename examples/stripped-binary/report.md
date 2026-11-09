@@ -48,3 +48,5 @@ Because the import list showed no network, process, or file functions, I ran the
 
 ## If you need to rebuild it
 A C reimplementation needs: the argument loop above, an encoder that scans runs up to 99 and prints `%zu%c`, a decoder that accumulates digits and then repeats the next byte, and the four exit paths. The banner and usage strings are given verbatim above. Test it against the 20-odd input/output pairs in this report; they're a ready-made characterization suite.
+
+<!-- Copyright (c) 2026 Likhon Sheikh - https://github.com/sheikhminds - MIT License -->

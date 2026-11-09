@@ -1,11 +1,31 @@
+# Copyright (c) 2026 Likhon Sheikh <https://github.com/sheikhminds>
+# SPDX-License-Identifier: MIT
 name: smoke test
-on: [push, pull_request]
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   smoke:
-    runs-on: ubuntu-latest
+    name: ${{ matrix.os }} / Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python: ["3.11", "3.12"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-      - run: python3 tests/smoke_test.py
+          python-version: ${{ matrix.python }}
+      - name: Run smoke test
+        run: python tests/smoke_test.py

@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Likhon Sheikh <https://github.com/sheikhminds>
+# SPDX-License-Identifier: MIT
 import struct, socket
 def crc16(data, poly=0x1021, init=0xFFFF):
     crc = init

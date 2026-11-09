@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Copyright (c) 2026 Likhon Sheikh <https://github.com/sheikhminds>
+# SPDX-License-Identifier: MIT
 # Reproduce the key observations in report.md (run in a scratch directory).
 set -u
 B=${1:?path to rle binary}

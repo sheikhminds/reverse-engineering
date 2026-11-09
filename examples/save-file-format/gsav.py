@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Likhon Sheikh <https://github.com/sheikhminds>
+# SPDX-License-Identifier: MIT
 """Parser and serializer for the reconstructed GSAV save format (see spec.md)."""
 import struct, zlib
 

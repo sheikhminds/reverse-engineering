@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 Likhon Sheikh <https://github.com/sheikhminds>
+# SPDX-License-Identifier: MIT
 """Summarize a classic .pcap file and dump one flow's payloads (standard library only).
 
 Handles Ethernet, Linux cooked (SLL) and raw-IP link types, IPv4 and IPv6, TCP and UDP.
@@ -181,5 +183,6 @@ def main():
 
 if __name__ == "__main__":
     import signal
-    signal.signal(signal.SIGPIPE, signal.SIG_DFL)  # quiet exit when piped to head/less
+    if hasattr(signal, "SIGPIPE"):  # not available on Windows
+        signal.signal(signal.SIGPIPE, signal.SIG_DFL)  # quiet exit when piped to head/less
     main()

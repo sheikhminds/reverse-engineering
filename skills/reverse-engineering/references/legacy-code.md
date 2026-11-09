@@ -97,3 +97,5 @@ Produce what the goal needs from this set, and keep them in the repository next 
 - **Reading everything.** Trace the paths that matter for the goal, and summarize the rest.
 - **Trusting stale docs, comments, and diagrams** over the behavior you've observed.
 - **Environment-specific behavior:** time zones, locale, file encodings, line endings, and operating-system quirks. When results differ between machines, suspect these first.
+
+<!-- Copyright (c) 2026 Likhon Sheikh - https://github.com/sheikhminds - MIT License -->

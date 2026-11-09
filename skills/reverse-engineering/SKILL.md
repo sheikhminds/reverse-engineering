@@ -131,3 +131,5 @@ All scripts are standard-library Python, so they run anywhere. Run each with `--
 - **Byte-level traps.** Endianness, alignment padding, signed versus unsigned, and 32 versus 64-bit sizes account for a large share of "this doesn't parse" moments.
 - **Decompiler output is a draft.** Types, loop shapes, and names are inferred and sometimes wrong. Confirm anything important against the disassembly.
 - **Don't overclaim.** "The binary calls `connect` with a hard-coded address" is an observation. "The binary phones home" is an interpretation. Report the observation, then label the interpretation.
+
+<!-- Copyright (c) 2026 Likhon Sheikh - https://github.com/sheikhminds - MIT License -->

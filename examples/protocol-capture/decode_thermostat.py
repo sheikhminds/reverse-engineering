@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 Likhon Sheikh <https://github.com/sheikhminds>
+# SPDX-License-Identifier: MIT
 """Decode the reconstructed thermostat <-> hub protocol from a classic .pcap (standard library only).
 
 Usage: decode_thermostat.py capture.pcap [--port 9100] [--readings-only]

@@ -162,3 +162,5 @@ Before calling the spec done:
 - Check the round trip described above.
 - Try a sample from a different version, or one with unusual content (empty strings, maximum-length names, zero records, large numbers). Boundary cases are where field widths and encodings reveal their errors.
 - List what remains **Unknown** (reserved fields, flags whose meaning you never saw change) rather than guessing. Say what experiment would resolve each.
+
+<!-- Copyright (c) 2026 Likhon Sheikh - https://github.com/sheikhminds - MIT License -->

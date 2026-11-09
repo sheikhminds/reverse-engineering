@@ -1,0 +1,28 @@
+# Copyright (c) 2026 Likhon Sheikh <https://github.com/sheikhminds>
+# SPDX-License-Identifier: MIT
+name: Feature request
+description: Suggest a new target type, reference, script, or eval case
+title: "[feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the target or workflow that the skill currently handles poorly.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you add or change?
+      description: Keep helper scripts standard-library only, and put domain detail in references/.
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This stays within authorized interoperability, documentation, defensive research, or education.
+          required: true

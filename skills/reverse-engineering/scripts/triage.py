@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 Likhon Sheikh <https://github.com/sheikhminds>
+# SPDX-License-Identifier: MIT
 """First-look triage of an unknown file (standard library only).
 
 Reports: size and hashes, identified type, a hex preview, an entropy profile,
@@ -327,5 +329,6 @@ def main():
 
 if __name__ == "__main__":
     import signal
-    signal.signal(signal.SIGPIPE, signal.SIG_DFL)  # quiet exit when piped to head/less
+    if hasattr(signal, "SIGPIPE"):  # not available on Windows
+        signal.signal(signal.SIGPIPE, signal.SIG_DFL)  # quiet exit when piped to head/less
     main()

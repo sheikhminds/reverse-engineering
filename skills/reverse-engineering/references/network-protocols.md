@@ -109,3 +109,5 @@ TLS-protected or custom-encrypted payloads can't be read from a capture alone, a
 - Re-encode decoded messages and compare the bytes with the original.
 - Check length and checksum rules on the longest and shortest messages, where off-by-one errors hide.
 - State what's unverified: message types seen once, fields that never changed, behaviors that depend on states the capture doesn't contain.
+
+<!-- Copyright (c) 2026 Likhon Sheikh - https://github.com/sheikhminds - MIT License -->

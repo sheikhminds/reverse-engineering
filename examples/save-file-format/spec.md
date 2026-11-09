@@ -51,3 +51,5 @@ Samples examined: 4 (`empty`, `one-player`, `one-player-later`, `two-players`). 
 2. `hexdiff.py` between `one-player` and `one-player-later` isolated the timestamp (+3600), level (+1), HP and gold fields, and the trailing 4 bytes, which changed whenever anything else did.
 3. The trailer was tested as CRC-32 over `data[:-4]` and matched in all samples.
 4. `gsav.py` parses all samples to the values you gave me and `serialize(parse(x)) == x` for each.
+
+<!-- Copyright (c) 2026 Likhon Sheikh - https://github.com/sheikhminds - MIT License -->

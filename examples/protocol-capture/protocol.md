@@ -63,3 +63,5 @@ A0 BE            crc16 over 10 00 02 00 08 01 00 D7 2D 69 10 AA FE
 - **Other sensor ids and the valid temperature range.** Only ids 1 and 2 were seen. The sign handling is confirmed for one negative value.
 - **Whether HELLO_ACK's session id and the `seq` counters reset on reconnect.**
 - Nothing here is encrypted or authenticated: there's no key, nonce or MAC field. That is an observation about this capture, and anyone on the network path could read or forge these frames.
+
+<!-- Copyright (c) 2026 Likhon Sheikh - https://github.com/sheikhminds - MIT License -->

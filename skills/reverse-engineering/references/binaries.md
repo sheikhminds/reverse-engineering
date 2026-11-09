@@ -143,3 +143,5 @@ If your reimplementation agrees on a spread of inputs, call the finding Confirme
 ## 8. Reporting
 
 Use the analysis-report template in `SKILL.md`. For a binary, the Interfaces section should list: command-line options and their effects, input sources (files, stdin, sockets, environment), outputs, files and network endpoints touched, and external dependencies. Put the observed facts first and your interpretation of purpose last.
+
+<!-- Copyright (c) 2026 Likhon Sheikh - https://github.com/sheikhminds - MIT License -->

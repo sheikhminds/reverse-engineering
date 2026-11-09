@@ -1,3 +1,5 @@
+/* Copyright (c) 2026 Likhon Sheikh <https://github.com/sheikhminds> */
+/* SPDX-License-Identifier: MIT */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
