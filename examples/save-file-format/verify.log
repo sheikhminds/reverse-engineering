@@ -1,0 +1,5 @@
+empty              round-trip=OK  {"version": 3, "timestamp": 1762600000, "players": []}
+one-player         round-trip=OK  {"version": 3, "timestamp": 1762603600, "players": [{"name": "Ann", "level": 5, "hp": 87.5, "gold": 1200}]}
+one-player-later   round-trip=OK  {"version": 3, "timestamp": 1762607200, "players": [{"name": "Ann", "level": 6, "hp": 100.0, "gold": 1350}]}
+two-players        round-trip=OK  {"version": 3, "timestamp": 1762610800, "players": [{"name": "Ann", "level": 6, "hp": 100.0, "gold": 1350}, {"name": "Boris", "level": 2, "hp": 42.25, "gold": 75}]}
+corrupted file rejected: CRC-32 mismatch

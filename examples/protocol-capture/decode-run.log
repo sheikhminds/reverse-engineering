@@ -1,0 +1,13 @@
+device->hub  seq=1   HELLO      device_id=THERM-7F3A
+device->hub  seq=2   READING    sensor=1 temp=21.5 C humidity=45% time=2025-11-09 14:53:50Z
+device->hub  seq=3   READING    sensor=1 temp=21.7 C humidity=46% time=2025-11-09 14:54:20Z
+device->hub  seq=4   READING    sensor=2 temp=-3.5 C humidity=80% time=2025-11-09 14:54:50Z
+device->hub  seq=5   PING       
+device->hub  seq=6   BYE        
+hub->device  seq=1   HELLO_ACK  session=0x00c0ffee interval=30s
+hub->device  seq=2   ACK        acked_seq=2
+hub->device  seq=3   ACK        acked_seq=3
+hub->device  seq=4   ACK        acked_seq=4
+hub->device  seq=5   PONG       
+
+all checksums valid

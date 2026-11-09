@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: reconstruct-thermostat-protocol
+expected_outcome: |
+  The envelope, message types and checksum are reconstructed and a decoder that handles TCP segmentation prints the three readings with no checksum failures.
+context:
+  scaffold_script: place-files.sh

@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: infer-save-file-format
+expected_outcome: |
+  The format is reconstructed correctly and delivered as a spec plus a parser/serializer that round-trips all four samples.
+context:
+  scaffold_script: place-files.sh
